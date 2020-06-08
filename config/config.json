@@ -2,12 +2,12 @@
   "config_id": "production",
   "sheets": {
     "read": {
-      "id": "1z2Bq1_QxnJtDQ0D__xCRWTFLPngFoAi-VekBXqPB4m4",
-      "range": "B2:G34"
+      "id": "NADA",
+      "range": "NADA"
     },
     "write": {
-      "id": "12t1ikza3sRM4Wsmt1QMOwbgkGb2jY5v8rjRmX1Y9xJg",
-      "range": "Ponto!N3",
+      "id": "1-mPFWd9hyYjyjdH7AGWL36D2ifTqGPLo1CnOTwKbBCE",
+      "range": "Ponto!C3",
       "includeValuesInResponse": "true",
       "insertDataOption": "OVERWRITE",
       "responseDateTimeRenderOption": "SERIAL_NUMBER",
