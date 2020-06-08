@@ -100,7 +100,6 @@ router.post('/change-password', auth.isAuthenticated, auth.isAdmin, (req, res) =
           Mandatory.getLastWeekReport().then((report) => {
             Sheets.writeReportGoogleSheets(report);
           })
-
         }
         req.flash('success', 'Senha alterada com sucesso.');
         res.redirect('/admin');
