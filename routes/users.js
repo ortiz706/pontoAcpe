@@ -35,11 +35,6 @@ router.get('/', auth.isAuthenticated, auth.isAdmin, (req, res) => {
  */
 router.get('/new', auth.isAuthenticated, auth.isAdmin, (req, res) => {
   Role.getAll().then((roles) => {
-    const Mandatory = require('../functions/mandatory');
-    const Sheets = require('../functions/sheets');
-    Mandatory.getLastWeekReport().then((report) => {
-      Sheets.writeReportGoogleSheets(report);
-    })
     res.render('users/new', { title: 'Novo membro', roles });
   }).catch((error) => {
     req.flash('danger', error.message);
